@@ -1,0 +1,28 @@
+.typing-animation {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+}
+
+.typing-animation--presentation {
+    width: 21ch;
+    animation: typing 2s steps(21), blink .5s step-end infinite alternate;
+}
+
+.typing-animation--about-us {
+    width: 27ch;
+    animation: typing 2s steps(27), blink .5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0%
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
