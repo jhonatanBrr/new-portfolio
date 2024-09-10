@@ -1,0 +1,80 @@
+.section-contact-cards {
+    padding-inline: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 200px;
+    height: 350px;
+    background-color: #041122;
+    border-radius: 12px;
+    position: relative;
+    padding: 30px;
+    border: solid 1px var(--secondary-color);
+}
+
+#cards:hover .card-contact {
+    background: radial-gradient(400px circle at var(--mouse-x) var(--mouse-y),
+            hsl(var(--color) / 1),
+            rgba(38, 45, 75, 0.12) 40%);
+}
+
+.card-contact:nth-child(1) {
+    --color: 200 100% 40%;
+}
+
+.card-contact:nth-child(2) {
+    --color: 0 0% 50%;
+}
+
+
+.card-contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(500px circle at var(--mouse-x) var(--mouse-y),
+            hsl(var(--color) / 0.35),
+            transparent 40%);
+    border-radius: inherit;
+    opacity: 0;
+    z-index: 2;
+}
+
+#cards:hover .card-contact::before {
+    opacity: 1;
+}
+
+a {
+    cursor: pointer;
+    z-index: 100;
+}
+
+.button-contact-card {
+    background-color: transparent;
+    border: solid 2px var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.button-contact-card:hover {
+    background-color: var(--body-color);
+}
+
+.card-contact-logo {
+    width: 150px;
+    z-index: 100;
+}
+
+.card-contact h2 {
+    font-size: 24px;
+    z-index: 100;
+}

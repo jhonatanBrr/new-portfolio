@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./skillBar.css">
-    <link rel="stylesheet" href="./typingAnimation.css">
-    <link rel="stylesheet" href="./nav-bar.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/contact-animation.css">
+    <link rel="stylesheet" href="./styles/nav-bar.css">
+    <link rel="stylesheet" href="./styles/typing-animation.css">
+    <link rel="stylesheet" href="./styles/scroll-animation.css">
+    <link rel="stylesheet" href="./styles/skillBar.css">
+    <link rel="stylesheet" href="./styles/style-variables.css">
     <title>Jhonatan Berrios</title>
 </head>
 
@@ -34,7 +37,9 @@
             <a href="#about">Sobre mí</a>
             <a href="#projects">Mis projectos</a>
             <a href="#skills">Mis habilidades</a>
-            <button>Contacto</button>
+            <!-- <a href="mailto:jhonatanberriosolave@gmail.com">
+                <button>Contacto</button>
+            </a> -->
         </div>
     </nav>
 
@@ -183,9 +188,36 @@
         </div>
     </section>
 
+    <h2>Mis redes</h2>
+
+    <section>
+        <div id="cards" class="section-contact-cards">
+            <div class="card-contact">
+                <img class="card-contact-logo" src="./icons/linkedin.svg" alt="">
+                <h2>linkedin</h2>
+                <a href="https://www.linkedin.com/in/jhonatan-david-berrios-86b499210/">
+                    <button class="button-contact-card">
+                        Sigueme
+                    </button>
+                </a>
+            </div>
+
+            <div class="card-contact">
+                <img class="card-contact-logo" src="./icons/github.svg" alt="">
+                <h2>GitHub</h2>
+                <a href="https://github.com/jhonatanBrr">
+                    <button class="button-contact-card">
+                        Sigueme
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <footer>
         Jhonatan David Berrios
     </footer>
+    <script src="./logic.js"></script>
 </body>
 
 </html>
