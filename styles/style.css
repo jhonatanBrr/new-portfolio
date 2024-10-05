@@ -8,6 +8,10 @@
     color: var(--primary-text-color);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--body-color);
 }
