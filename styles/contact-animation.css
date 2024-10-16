@@ -59,16 +59,6 @@ a {
     z-index: 100;
 }
 
-.button-contact-card {
-    background-color: transparent;
-    border: solid 2px var(--secondary-color);
-    color: var(--secondary-color);
-}
-
-.button-contact-card:hover {
-    background-color: var(--body-color);
-}
-
 .card-contact-logo {
     width: 150px;
     z-index: 100;

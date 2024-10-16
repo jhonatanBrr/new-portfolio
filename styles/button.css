@@ -1,0 +1,23 @@
+button {
+    padding: 17px 30px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.button--prymary {
+    color: var(--body-color);
+    background-color: var(--primary-color);
+}
+
+.button--secondary {
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: solid 2px var(--secondary-color);
+}
+
+.button--secondary:hover {
+    background-color: var(--body-color);
+}

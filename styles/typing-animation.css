@@ -3,6 +3,8 @@
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .typing-animation--presentation {

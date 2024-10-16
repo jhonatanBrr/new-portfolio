@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./styles/scroll-animation.css">
     <link rel="stylesheet" href="./styles/skillBar.css">
     <link rel="stylesheet" href="./styles/style-variables.css">
+    <link rel="stylesheet" href="./styles/card-project.css">
+    <link rel="stylesheet" href="./styles/button.css">
     <title>Jhonatan Berrios</title>
 </head>
 
@@ -38,9 +40,6 @@
             <a href="#projects">Mis proyectos</a>
             <a href="#skills">Mis habilidades</a>
             <a href="#social">Mis Redes</a>
-            <!-- <a href="mailto:jhonatanberriosolave@gmail.com">
-                <button>Contacto</button>
-            </a> -->
         </div>
     </nav>
 
@@ -53,7 +52,7 @@
                 éxito de tu negocio.
             </p>
             <a class="download-cv" href="./docs/JhonatanBerriosOlave.pdf" download="documento.pdf">
-                <button class="button-dowloan">Descargar cv</button>
+                <button class="button-dowloan button--prymary">Descargar cv</button>
             </a>
         </div>
         <img class="about_photo" src="./img/photo.png" alt="">
@@ -81,35 +80,66 @@
 
     <section>
         <div class="grid-projects">
-            <div class="card-project">
-                <a href="https://jhonatanbrr.github.io/tasksApp/">
-                    <img class="project-img" src="./img/taskapp.png" alt="">
-                    <div class="overlay">
-                        <h1>Task app</h1>
-                        <p>Es una aplicacion de tareas donde puedes crear, tachar, filtar y eliminar tareas</p>
-                    </div>
-                </a>
+
+            <div class="project-card">
+                <img class="project-image" src="./img/taskapp.png" alt="">
+                <p>Es una aplicacion de tareas donde puedes crear, tachar, filtar y eliminar tareas</p>
+                <div class="project-actions">
+                    <a href="https://github.com/jhonatanBrr/tasksApp">
+                        <button class="button--secondary">
+                            Code
+                        </button>
+                    </a>
+                    <a href="https://jhonatanbrr.github.io/tasksApp/">
+                        <button class="button--secondary">
+                            Preview
+                        </button>
+                    </a>
+                </div>
             </div>
 
-            <div class="card-project">
-                <a href="https://jhonatanbrr.github.io/text-encryptor/">
-                    <img class="project-img" src="./img/text-encryptor.png" alt="">
-                    <div class="overlay">
-                        <h1>Text encryptor</h1>
-                        <p>Es una aplicacion de encriptacion y desencriptación de texto</p>
-                    </div>
-                </a>
+            <div class="project-card">
+                <img class="project-image" src="./img/text-encryptor.png" alt="">
+                <p>Es una aplicacion de tareas donde puedes crear, tachar, filtar y eliminar tareas</p>
+                <div class="project-actions">
+                    <a href="https://github.com/jhonatanBrr/text-encryptor">
+                        <button class="button--secondary">
+                            Code
+                        </button>
+                    </a>
+                    <a href="https://jhonatanbrr.github.io/text-encryptor/">
+                        <button class="button--secondary">
+                            Preview
+                        </button>
+                    </a>
+                </div>
             </div>
 
-            <div class="card-project">
-                <a href="https://purrfecthire.com/">
-                    <img class="project-img" src="./img/web-purrfecthire.png" alt="">
-                    <div class="overlay">
-                        <h1>purrfecthire</h1>
-                        <p>Landing page purrfecthire</p>
-                    </div>
-                </a>
+            <div class="project-card">
+                <img class="project-image" src="./img/web-purrfecthire.png" alt="">
+                <p>Es una aplicacion de tareas donde puedes crear, tachar, filtar y eliminar tareas</p>
+                <div class="project-actions">
+                    <a href="https://purrfecthire.com/">
+                        <button class="button--secondary">
+                            Preview
+                        </button>
+                    </a>
+                </div>
             </div>
+
+            <div class="project-card">
+                <img class="project-image" src="./img/gh.png" alt="">
+                <p>Aplicación de tareas que permite crear, tachar, filtrar y eliminar tareas, implementando buenas prácticas como Redux, arquitectura limpia y TypeScript.</p>
+                <div class="project-actions">
+                    <a href="https://github.com/jhonatanBrr/virtual-shop-ionic">
+                        <button class="button--secondary">
+                            code
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
 
         </div>
     </section>
@@ -121,70 +151,51 @@
             <div class="skill_content">
                 <img src="./img/css.svg" alt="">
                 <p class="tertiary_text">Css</p>
-                <!-- <div class="content_bar">
-                    <span class="bar"><span class="css"></span></span>
-                    <p>50%</p>
-                </div> -->
             </div>
 
             <div class="skill_content">
                 <img src="./img/html.svg" alt="">
                 <p class="tertiary_text">Html</p>
-                <!-- <div class="content_bar">
-                    <span class="bar"><span class="html"></span></span>
-                    <p>95%</p>
-                </div> -->
             </div>
 
             <div class="skill_content">
                 <img src="./img/js.svg" alt="">
                 <p class="tertiary_text">JavaScript</p>
-                <!-- <div class="content_bar">
-                    <span class="bar"><span class="javaScript"></span></span>
-                    <p>90%</p>
-                </div> -->
+            </div>
+
+            <div class="skill_content">
+                <img src="./img/typescript.svg" alt="">
+                <p class="tertiary_text">TypeScript</p>
             </div>
 
             <div class="skill_content">
                 <img src="./img/ionic.svg" alt="">
                 <p class="tertiary_text">Ionic</p>
-                <!-- <div class="content_bar">
-                    <span class="bar"><span class="ionic"></span></span>
-                    <p>30%</p>
-                </div> -->
             </div>
 
             <div class="skill_content">
                 <img src="./img/angular.svg" alt="">
                 <p class="tertiary_text">Angular</p>
-                <!-- <div class="content_bar">
-                    <span class="bar"><span class="angular"></span></span>
-                    <p>60%</p>
-                </div> -->
             </div>
             <div class="skill_content">
                 <img src="./img/reactjs.svg" alt="">
                 <p class="tertiary_text">React</p>
-                <!-- <div class="content_bar">
-                    <span class="bar"><span class="react"></span></span>
-                    <p>85%</p>
-                </div> -->
             </div>
             <div class="skill_content">
                 <img src="./img/git.svg" alt="">
                 <p class="tertiary_text">Git</p>
-                <!-- <div class="content_bar">
-                    <span class="bar"><span class="git"></span></span>
-                    <p>70%</p>
-                </div> -->
             </div>
             <div class="skill_content">
                 <img src="./img/jest.svg" alt="">
-                <p class="tertiary_text">jest.js</p>
-                <!-- <div class="content_bar">
-                    <span class="bar"><span class="jest"></span></span>
-                    <p>40%</p>
-                </div> -->
+                <p class="tertiary_text">Jest.js</p>
+            </div>
+            <div class="skill_content">
+                <img src="./img/redux.svg" alt="">
+                <p class="tertiary_text">Redux</p>
+            </div>
+            <div class="skill_content">
+                <img src="./img/java.png" alt="">
+                <p class="tertiary_text">Java</p>
             </div>
         </div>
     </section>
@@ -197,7 +208,7 @@
                 <img class="card-contact-logo" src="./icons/linkedin.svg" alt="">
                 <h2>linkedin</h2>
                 <a href="https://www.linkedin.com/in/jhonatan-david-berrios-86b499210/">
-                    <button class="button-contact-card">
+                    <button class="button--secondary">
                         Sigueme
                     </button>
                 </a>
@@ -207,7 +218,7 @@
                 <img class="card-contact-logo" src="./icons/github.svg" alt="">
                 <h2>GitHub</h2>
                 <a href="https://github.com/jhonatanBrr">
-                    <button class="button-contact-card">
+                    <button class="button--secondary">
                         Sigueme
                     </button>
                 </a>
