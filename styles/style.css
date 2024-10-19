@@ -13,10 +13,12 @@ html {
 }
 
 body {
-    background-color: var(--body-color); 
+    background-color: var(--body-color);
 }
 
 section {
+    display: flex;
+    justify-content: space-between;
     padding: 100px 18%;
 }
 
@@ -159,6 +161,7 @@ h2 {
 
 .grid-skills {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(auto-fit,
             minmax(250px,
                 1fr));
@@ -189,8 +192,18 @@ footer {
 }
 
 @media (max-width: 900px) {
+    p, h1 {
+        text-align: center;
+    }
+
+    .presentation {
+        margin-top: 30px;
+        align-items: center;
+    }
+
     section {
         flex-direction: column;
+        align-items: center;
         gap: 30px;
     }
 
