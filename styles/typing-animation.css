@@ -1,4 +1,5 @@
 .typing-animation {
+    text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -13,8 +14,8 @@
 }
 
 .typing-animation--about-us {
-    width: 27ch;
-    animation: typing 2s steps(27), blink .5s step-end infinite alternate;
+    width: 18ch;
+    animation: typing 2s steps(18), blink .5s step-end infinite alternate;
 }
 
 @keyframes typing {
@@ -26,11 +27,5 @@
 @keyframes blink {
     50% {
         border-color: transparent
-    }
-}
-
-@media (max-width: 900px) {
-    .typing-animation {
-        margin: auto;
     }
 }

@@ -1,35 +1,82 @@
+.flex-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
 .project-card {
+    display: flex;
+    gap: 35px;
+}
+
+.project-info {
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 350px;
-    width: 100%;
-    padding: 20px;
-    border-radius: 12px;
-    border: solid 1px var(--secondary-color);
 }
 
-.project-card p {
-    text-align: center;
+.project-info h3 {
+    font-size: 24px;
 }
 
-@media (max-width: 907px) {
+.project-description {
+    font-size: 16px;
+}
+
+
+.project-image {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+    width: 450px;
+}
+
+@media (max-width: 1440px) {
+    .project-info {
+        gap: 15px;
+    }
+
     .project-card {
-        width: 330px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .flex-projects {
+        align-items: center;
     }
 }
 
-.project-image {
-    max-height: 200px; 
-    width: 100%;
-    height: 150px; 
-    object-fit: cover;
-    border-radius: 10px;
+@media (max-width: 470px) {
+    .project-image, .project-info {
+        width: 350px;
+    }
+
+    .flex-projects {
+        gap: 50px;
+    }
 }
 
+.project-chip-list {
+    display: flex;
+    gap: 10px;
+}
+.chip-technology {
+    display: flex;
+    gap: 10px;
+}
 
 .project-actions {
     display: flex;
-    justify-content: center;
     gap: 20px;
+}
+
+.project-card button {
+    width: 100px;
+    background-color: var(--body-color);
+    border: solid 1px;
+    border-radius: 10px;
+    height: 45px;
+    width: auto;
+    padding: 0 10px;
 }

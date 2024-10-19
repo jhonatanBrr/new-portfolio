@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lato", sans-serif;
+    font-family: "Onest", sans-serif;
     color: var(--primary-text-color);
 }
 
@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: var(--body-color);
+    background-color: var(--body-color); 
 }
 
 section {
@@ -49,13 +49,18 @@ a:hover {
     align-items: center;
 }
 
+@media (max-width: 1120px) {
+    .presentation-section {
+        padding: 150px 10% 80px 10%;
+    }
+}
+
 .about_photo {
     height: 480px;
     width: 480px;
 }
 
 .presentation {
-    padding-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -76,15 +81,7 @@ h1 {
 
 .description {
     max-width: 450px;
-}
-
-.grid-projects {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(auto-fit,
-            minmax(350px,
-                1fr));
-    gap: 25px;
+    font-size: 20px;
 }
 
 h2 {
@@ -194,7 +191,7 @@ footer {
 @media (max-width: 900px) {
     section {
         flex-direction: column;
-        text-align: center;
+        gap: 30px;
     }
 
     .download-cv {
@@ -207,12 +204,3 @@ footer {
     }
 }
 
-@media (max-width: 490px) {
-    .grid-projects {
-        display: grid;
-        justify-items: center;
-        grid-template-columns: repeat(auto-fit,
-                minmax(90%,
-                    1fr));
-    }
-}
