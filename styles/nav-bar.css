@@ -50,15 +50,15 @@ nav #nav-check {
     display: none;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1560px) {
     nav {
         padding: 0px 12%;
-    }
+    }   
 }
 
 @media (max-width: 1200px) {
     nav {
-        padding: 0px 10%;
+        padding: 0px 8%;
     }
 }
 
