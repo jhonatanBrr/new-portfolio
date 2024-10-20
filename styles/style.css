@@ -169,6 +169,40 @@ h2 {
     gap: 16px;
 }
 
+@media (max-width: 977px) {   
+    .skill_content {
+        height: 200px;
+        width: 80px;
+    }
+    .grid-skills {
+        grid-template-columns: repeat(auto-fit,
+                minmax(200px,
+                    1fr));
+    }
+}
+
+@media (max-width: 789px) {   
+    .skill_content {
+        width: 70px;
+    }
+    .grid-skills {
+        grid-template-columns: repeat(auto-fit,
+                minmax(150px,
+                    1fr));
+    }
+}
+
+@media (max-width: 602px) {   
+    .skill_content {
+        width: 50px;
+    }
+    .grid-skills {
+        grid-template-columns: repeat(auto-fit,
+                minmax(120px,
+                    1fr));
+    }
+}
+
 footer {
     background: var(--primary-color);
     color: var(--body-color);
