@@ -187,18 +187,7 @@ h2 {
     }
     .grid-skills {
         grid-template-columns: repeat(auto-fit,
-                minmax(150px,
-                    1fr));
-    }
-}
-
-@media (max-width: 602px) {   
-    .skill_content {
-        width: 50px;
-    }
-    .grid-skills {
-        grid-template-columns: repeat(auto-fit,
-                minmax(120px,
+                minmax(145px,
                     1fr));
     }
 }
